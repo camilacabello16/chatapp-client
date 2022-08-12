@@ -4,6 +4,8 @@ import { Alert, notification } from 'antd';
 import FacebookLogin from 'react-facebook-login';
 import SignIn from './pages/signin/signin';
 import SignInLayout from './layout/SigninLayout';
+import { Routes, Route, Link } from "react-router-dom";
+import SignUp from './pages/signup/signup';
 
 function App() {
 
@@ -24,7 +26,25 @@ function App() {
         //         callback={responseFacebook}
         //     />
         // </div>
-        <SignInLayout />
+        <Routes>
+            <Route
+                path="/signin"
+                element={
+                    <SignInLayout>
+                        <SignIn />
+                    </SignInLayout>
+                }
+            />
+            <Route
+                path="/signup"
+                element={
+                    <SignInLayout>
+                        <SignUp />
+                    </SignInLayout>
+                }
+            />
+        </Routes>
+
     );
 }
 
