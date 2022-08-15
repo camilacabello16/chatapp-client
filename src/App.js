@@ -6,6 +6,8 @@ import SignIn from './pages/signin/signin';
 import SignInLayout from './layout/SigninLayout';
 import { Routes, Route, Link } from "react-router-dom";
 import SignUp from './pages/signup/signup';
+import Chat from './pages/chat';
+import PageLayout from './layout/PageLayout';
 
 function App() {
 
@@ -41,6 +43,15 @@ function App() {
                     <SignInLayout>
                         <SignUp />
                     </SignInLayout>
+                }
+            />
+            <Route
+                path="/"
+                exact
+                element={
+                    <PageLayout>
+                        <Chat />
+                    </PageLayout>
                 }
             />
         </Routes>
