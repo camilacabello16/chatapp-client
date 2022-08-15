@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.22.4",
     "craco-less": "^2.0.0",
+    "firebase": "^9.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-facebook-login": "^4.1.1",
